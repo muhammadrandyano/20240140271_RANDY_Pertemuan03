@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 2 - Gudeg Yu Djum</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / HERO -->
+    <header class="site-header">
+        <div class="header-badge">
+            <i class="fa-solid fa-utensils"></i> Kuliner Legendaris Jogja
+        </div>
+        <h1>Selamat Datang di Web<br><span>Gudeg Yu Djum</span></h1>
+        <p class="subtitle">Tugas Praktikum Pengembangan Aplikasi Web</p>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="site-nav">
+        <div class="nav-container">
+            <a href="#about" class="nav-link active">
+                <i class="fa-solid fa-circle-info"></i> About Gudeg
+            </a>
+            <a href="#profil" class="nav-link">
+                <i class="fa-solid fa-user"></i> Profil Saya
+            </a>
+            <a href="#formdata" class="nav-link">
+                <i class="fa-solid fa-pen-to-square"></i> Form Usulan
+            </a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+        
+        <!-- SECTION 1: ABOUT GUDEG -->
+        <section id="about" class="content-card">
+            <div class="card-header">
+                <div class="card-icon"><i class="fa-solid fa-bowl-food"></i></div>
+                <h2>About Gudeg Yu Djum</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="img-wrapper">
+                    <img src="gudeg.jpg" alt="Satu porsi Gudeg Yu Djum khas Jogja lengkap dengan krecek dan telur" class="img-responsive">
+                    <span class="img-tag"><i class="fa-solid fa-location-dot"></i> Yogyakarta</span>
+                </div>
+
+                <article class="about-text">
+                    <h3><i class="fa-solid fa-star"></i> Ringkasan Kuliner</h3>
+                    <p>
+                        Gudeg Yu Djum merupakan salah satu kuliner ikonik khas Yogyakarta yang menggunakan resep tradisional ber-cita rasa manis gurih otentik. 
+                    </p>
+                    <p>
+                        Olahan nangka muda (gudeg) dipadukan dengan krecek pedas, telur bacem, dan ayam kampung berkualitas yang dimasak secara telaten menggunakan tungku kayu bakar tradisional untuk mempertahankan cita rasa khasnya.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION 2: PROFIL MAHASISWA -->
+        <section id="profil" class="content-card">
+            <div class="card-header">
+                <div class="card-icon"><i class="fa-solid fa-id-card"></i></div>
+                <h2>Profil Mahasiswa</h2>
+            </div>
+
+            <div class="profile-badge-card">
+                <div class="avatar-circle">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <div class="profile-details">
+                    <div class="detail-item">
+                        <span class="detail-label"><i class="fa-solid fa-signature"></i> Nama</span>
+                        <span class="detail-value">Randy</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label"><i class="fa-solid fa-hashtag"></i> NIM</span>
+                        <span class="detail-value">[Masukkan NIM Anda]</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label"><i class="fa-solid fa-layer-group"></i> Kelas</span>
+                        <span class="detail-value">[Masukkan Kelas Anda]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: FORM USULAN -->
+        <section id="formdata" class="content-card">
+            <div class="card-header">
+                <div class="card-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                <h2>Form Usulan</h2>
+            </div>
+
+            <form action="#" method="POST" class="custom-form">
+                <div class="form-group">
+                    <label for="nama"><i class="fa-regular fa-user"></i> Masukkan Nama Anda:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama lengkap Anda..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><i class="fa-regular fa-envelope"></i> Email Kontak:</label>
+                    <input type="email" id="email" name="email" placeholder="alamat@email.com" required>
+                </div>
+
+                <fieldset class="form-fieldset">
+                    <legend><i class="fa-solid fa-venus-mars"></i> Jenis Kelamin</legend>
+                    <div class="radio-segmented">
+                        <label class="radio-option">
+                            <input type="radio" name="jk" id="pria" value="pria">
+                            <span class="radio-tile"><i class="fa-solid fa-mars"></i> Pria</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="jk" id="wanita" value="wanita">
+                            <span class="radio-tile"><i class="fa-solid fa-venus"></i> Wanita</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="usulan"><i class="fa-regular fa-comment-dots"></i> Tuliskan Usulan / Pesan:</label>
+                    <textarea id="usulan" name="usulan" rows="4" placeholder="Tuliskan masukan atau usulan varian menu..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <span>Kirim Usulan</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 - Gudeg Yu Djum &bull; Praktikum PAW</p>
+    </footer>
+
+</body>
+</html>
